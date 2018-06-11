@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="195" id="KGk-i7-Jjw" customClass="MyTableViewCell" customModule="hangge_1591" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="482" height="195"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="482" height="194.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iW1-8m-doY">
+                        <rect key="frame" x="20" y="153" width="442" height="41"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="TI0-U9-Qz9">
+                        <rect key="frame" x="20" y="11" width="442" height="100"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="Oa7-hm-OUu"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="7" minimumInteritemSpacing="0.0" id="Tkl-S6-mcw">
+                            <size key="itemSize" width="67" height="90"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQ9-jb-0bT">
+                        <rect key="frame" x="20" y="108" width="215" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="A"/>
+                        <connections>
+                            <action selector="clickA:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="SSg-md-2Kk"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnG-Lr-OPe">
+                        <rect key="frame" x="251" y="108" width="211" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="B"/>
+                        <connections>
+                            <action selector="clickB:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="j3a-QZ-6LZ"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iW1-8m-doY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="F6A-Ah-NWL"/>
+                    <constraint firstItem="iW1-8m-doY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="M6C-Pn-nvf"/>
+                    <constraint firstItem="TI0-U9-Qz9" firstAttribute="top" secondItem="iW1-8m-doY" secondAttribute="bottom" constant="8" id="Xpd-U3-VDJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="iW1-8m-doY" secondAttribute="trailing" id="a7P-WE-aRk"/>
+                    <constraint firstItem="TI0-U9-Qz9" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="bGz-KL-4J1"/>
+                    <constraint firstItem="TI0-U9-Qz9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="cbw-2o-RUC"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="TI0-U9-Qz9" secondAttribute="bottom" constant="6" id="qFB-Re-Nd9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionView" destination="TI0-U9-Qz9" id="3Ey-BT-CgS"/>
+                <outlet property="collectionViewHeight" destination="Oa7-hm-OUu" id="1Eh-7L-CrH"/>
+                <outlet property="titleLabel" destination="iW1-8m-doY" id="PIq-04-obt"/>
+            </connections>
+            <point key="canvasLocation" x="106" y="127.5"/>
+        </tableViewCell>
+    </objects>
+</document>
