@@ -14,13 +14,14 @@
 		5863AC231FFC70F6006820E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5863AC211FFC70F6006820E2 /* Main.storyboard */; };
 		5863AC251FFC70F6006820E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5863AC241FFC70F6006820E2 /* Assets.xcassets */; };
 		5863AC281FFC70F6006820E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5863AC261FFC70F6006820E2 /* LaunchScreen.storyboard */; };
-		5863AC351FFC7151006820E2 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5863AC331FFC7151006820E2 /* MyCollectionViewCell.swift */; };
-		5863AC361FFC7151006820E2 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5863AC341FFC7151006820E2 /* MyCollectionViewCell.xib */; };
 		5863AC3A1FFC719C006820E2 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5863AC381FFC719C006820E2 /* MyTableViewCell.swift */; };
 		5863AC3B1FFC719C006820E2 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5863AC391FFC719C006820E2 /* MyTableViewCell.xib */; };
+		8992BA6C2291715DC1F9253E /* Pods_Sherry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BCD71CFB4D7332BB9E29BD /* Pods_Sherry.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09BCD71CFB4D7332BB9E29BD /* Pods_Sherry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sherry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2023FC82CBAAEBCE2CB32B4C /* Pods-Sherry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sherry.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sherry/Pods-Sherry.debug.xcconfig"; sourceTree = "<group>"; };
 		4B1B032620CE672C00D6BCF6 /* AViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AViewController.swift; sourceTree = "<group>"; };
 		4B1B032820CE673D00D6BCF6 /* BViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BViewController.swift; sourceTree = "<group>"; };
 		5863AC1A1FFC70F6006820E2 /* Sherry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sherry.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,10 +31,9 @@
 		5863AC241FFC70F6006820E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5863AC271FFC70F6006820E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5863AC291FFC70F6006820E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5863AC331FFC7151006820E2 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
-		5863AC341FFC7151006820E2 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
 		5863AC381FFC719C006820E2 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		5863AC391FFC719C006820E2 /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
+		82243A171C1B423139A83C50 /* Pods-Sherry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sherry.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sherry/Pods-Sherry.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8992BA6C2291715DC1F9253E /* Pods_Sherry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +53,8 @@
 			children = (
 				5863AC1C1FFC70F6006820E2 /* Sherry */,
 				5863AC1B1FFC70F6006820E2 /* Products */,
+				ACA28F6F0F152B5711C24828 /* Pods */,
+				8CB47260D6114BD66066F195 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,14 +75,29 @@
 				5863AC241FFC70F6006820E2 /* Assets.xcassets */,
 				5863AC261FFC70F6006820E2 /* LaunchScreen.storyboard */,
 				5863AC291FFC70F6006820E2 /* Info.plist */,
-				5863AC331FFC7151006820E2 /* MyCollectionViewCell.swift */,
-				5863AC341FFC7151006820E2 /* MyCollectionViewCell.xib */,
 				5863AC381FFC719C006820E2 /* MyTableViewCell.swift */,
 				5863AC391FFC719C006820E2 /* MyTableViewCell.xib */,
 				4B1B032620CE672C00D6BCF6 /* AViewController.swift */,
 				4B1B032820CE673D00D6BCF6 /* BViewController.swift */,
 			);
 			path = Sherry;
+			sourceTree = "<group>";
+		};
+		8CB47260D6114BD66066F195 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09BCD71CFB4D7332BB9E29BD /* Pods_Sherry.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACA28F6F0F152B5711C24828 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2023FC82CBAAEBCE2CB32B4C /* Pods-Sherry.debug.xcconfig */,
+				82243A171C1B423139A83C50 /* Pods-Sherry.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5863AC2C1FFC70F6006820E2 /* Build configuration list for PBXNativeTarget "Sherry" */;
 			buildPhases = (
+				FDAFBA572ACB2EE986C7EB73 /* [CP] Check Pods Manifest.lock */,
 				5863AC161FFC70F6006820E2 /* Sources */,
 				5863AC171FFC70F6006820E2 /* Frameworks */,
 				5863AC181FFC70F6006820E2 /* Resources */,
+				AD875D9B1F343624D1DE6AE7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,12 +164,56 @@
 				5863AC3B1FFC719C006820E2 /* MyTableViewCell.xib in Resources */,
 				5863AC281FFC70F6006820E2 /* LaunchScreen.storyboard in Resources */,
 				5863AC251FFC70F6006820E2 /* Assets.xcassets in Resources */,
-				5863AC361FFC7151006820E2 /* MyCollectionViewCell.xib in Resources */,
 				5863AC231FFC70F6006820E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AD875D9B1F343624D1DE6AE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Sherry/Pods-Sherry-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sherry/Pods-Sherry-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDAFBA572ACB2EE986C7EB73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sherry-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5863AC161FFC70F6006820E2 /* Sources */ = {
@@ -160,7 +224,6 @@
 				4B1B032920CE673D00D6BCF6 /* BViewController.swift in Sources */,
 				5863AC3A1FFC719C006820E2 /* MyTableViewCell.swift in Sources */,
 				5863AC1E1FFC70F6006820E2 /* AppDelegate.swift in Sources */,
-				5863AC351FFC7151006820E2 /* MyCollectionViewCell.swift in Sources */,
 				4B1B032720CE672C00D6BCF6 /* AViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +359,7 @@
 		};
 		5863AC2D1FFC70F6006820E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2023FC82CBAAEBCE2CB32B4C /* Pods-Sherry.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,6 +375,7 @@
 		};
 		5863AC2E1FFC70F6006820E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82243A171C1B423139A83C50 /* Pods-Sherry.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

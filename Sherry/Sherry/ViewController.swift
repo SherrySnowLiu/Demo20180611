@@ -15,10 +15,7 @@ struct BookPreview {
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var ctrlnames:[AnyObject] = []
-//    let books = [
-//        BookPreview(title: "五月新书", images: "0.jpg"),
-//        BookPreview(title: "七月新书", images: "10.jpg")
-//    ]
+
     
     //显示内容的tableView
     @IBOutlet weak var tableView: UITableView!
@@ -29,6 +26,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+//        self.tableView.backgroundColor = UIColor.gray
         
         //设置tableView代理
         self.tableView!.delegate = self
@@ -85,21 +84,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     //创建各单元显示内容(创建参数indexPath指定的单元）
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath)
-        -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "myCell")
-                as! MyTableViewCell
-            
-            //下面这两个语句一定要添加，否则第一屏显示的collection view尺寸，以及里面的单元格位置会不正确
-            cell.frame = tableView.bounds
-            cell.layoutIfNeeded()
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") as! MyTableViewCell
             
             let item = self.ctrlnames[indexPath.row]
             let image = item.object(forKey: "image") as! String
             let text = item.object(forKey: "text") as? String
             //重新加载单元格数据
-            cell.reloadData(title:text!,
-                            images: [image])
+            cell.reloadData(title:text!, images: image)
             
             return cell
     }

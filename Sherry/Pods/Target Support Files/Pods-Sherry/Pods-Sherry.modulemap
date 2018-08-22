@@ -1,0 +1,6 @@
+framework module Pods_Sherry {
+  umbrella header "Pods-Sherry-umbrella.h"
+
+  export *
+  module * { export * }
+}
